@@ -43,4 +43,17 @@ class Model
 	}
 	
 
+		public static function insertarPqr($data)
+	{
+			
+			 $model = new static();
+
+
+			 $sql = "INSERT INTO ".$model->table."(tipoIdentificacion,tipoSolicitud,razonSocial,ciudad,comentario)  VALUES ('".$data['tipoID']."','".$data['tipoSol']."','".$data['rz']."','".$data['ciudad']."','".$data['comentario']."')";
+		 		$result = DB::queryInsertar($sql);
+		 		echo $sql;
+		 		exit();
+		 		return $result;
+	}	
+
 }

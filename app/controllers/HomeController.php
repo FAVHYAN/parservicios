@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Cliente;
 use app\models\Gestor;
+use app\models\Pqr;
 use \Controller;
 use \Response;
 
@@ -35,15 +36,27 @@ class HomeController extends Controller
 	public function actionRegistro()
 	{
 		$data = $_POST;
-		$depto = Cliente::insertar($data);
+		$data = Cliente::insertar($data);
 		Response::render("registrar", ["resgitroSuccess" => "registro ingreso correctamente"]);
 	}
 	public function actionRegistroOperario()
 	{
 		$data = $_POST;
-		$depto = Gestor::insertarOperario($data);
+		$data = Gestor::insertarOperario($data);
 		Response::render("registrar-operario", ["resgitroSuccess" => "registro ingreso correctamente"]);
 	}
 	
+	public function actionCrearPQR()
+	{
+		$data = $_POST;
+		Response::render("crear-pqr");
+
+	}
+	public function actionRegistroPQR()
+	{
+		$data = $_POST;
+		$data = Pqr::insertar($data);
+		Response::render("crear-pqr", ["resgitroSuccess" => "registro ingreso correctamente"]);
+	}
 
 }

@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 // definir rutas relativas a la raiz
 chdir(dirname(__DIR__));
 

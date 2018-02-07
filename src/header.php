@@ -20,7 +20,8 @@
 					    </div>
 					    <ul class="nav navbar-nav" style="float:right">
 					      <li><a href="<?php URL_PATH ?>/public/home/index">Home</a></li>
-						  <li><a href="<?php URL_PATH ?>/public/home/inicio">iniciar Secion</a></li>  
+						  <li><a href="<?php URL_PATH ?>/public/home/inicio">iniciar Sesión</a></li>  
+						  <li><a href="<?php URL_PATH ?>/public/home/crearPQR">Crear PQR</a></li>  
 						  <li><a href="<?php URL_PATH ?>/public/home/registrar">Registrar</a></li>
 						  <li><a href="<?php URL_PATH ?>/public/home/registrarOperario">Registrar operario</a></li>
 					    </ul>
