@@ -16,12 +16,13 @@
 					<nav class="navbar navbar-default">
 					  <div class="container-fluid">
 					    <div class="navbar-header">
-					      <a class="navbar-brand" href="#">AUTOMoviles</a>
+					      <a class="navbar-brand" href="#">ParServicios</a>
 					    </div>
 					    <ul class="nav navbar-nav" style="float:right">
-					      <li><a href="<?php URL_PATH ?>/inxait/public/home/index">Home</a></li>
-						  <li><a href="<?php URL_PATH ?>/inxait/public/home/concurso">Concurso</a></li>  
-						  <li><a href="<?php URL_PATH ?>/inxait/public/home/registrar">Registrar</a></li>
+					      <li><a href="<?php URL_PATH ?>/public/home/index">Home</a></li>
+						  <li><a href="<?php URL_PATH ?>/public/home/inicio">iniciar Secion</a></li>  
+						  <li><a href="<?php URL_PATH ?>/public/home/registrar">Registrar</a></li>
+						  <li><a href="<?php URL_PATH ?>/public/home/registrarOperario">Registrar operario</a></li>
 					    </ul>
 					  </div>
 					</nav>
